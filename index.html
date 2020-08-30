@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anc.io</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div class="introduction">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="headshot">
+                <defs>
+                    <filter id="colorize">
+                        <feFlood flood-color="#ffcc00" result="flood" />
+                        <feComposite in="SourceGraphic" in2="flood" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" />
+                    </filter>
+                </defs>
+                <image width="100%" height="100%" xlink:href="./assets/headshot.jpg" filter="url(#colorize)" />
+            </svg>
+            <p>
+                Hi, I'm Thomas, a freelance full-stack software engineer based out of Leuven, Belgium. I prefer working
+                together with others to tackle a common goal. My aim is to contribute to solutions which deliver value
+                for the end-user. Naturally, I thrive in climates that involves me in the short and long term vision. I
+                enjoy coaching team members, taking time, care and patience to ensure that knowledge is spread
+                throughout the team.
+            </p>
+            <p>
+                A creative thinker at the core, I believe time is best spent on those parts of the problem which are
+                unique to the task at hand, while leveraging tried and tested solutions. New developments in technology
+                intrigue me amd I actively keep up with the ever evolving landscape.
+            </p>
+            <p>
+                I can rely on a decade of experience in the field and, as a result, a broad set of skills. Whether it is
+                development of a web based SPA (<span class="skill">Vue</span>, <span class="skill">Angular</span>,
+                <span class="skill">React</span>, ...), traditional web server (<span class="skill">Node.js</span>,
+                <span class="skill">Express</span>, <span class="skill">NestJS</span>, ...) or cloud based architecture
+                (<span class="skill">AWS</span>, <span class="skill">Azure</span>, <span class="skill">Google
+                    Cloud</span>, ...), I am confident I will bring the required tools and knowledge to the table!
+            </p>
+        </div>
+        <div class="contact">
+            <h1>Find me on</h1>
+            <a href="https://www.linkedin.com/in/thomas-anciaux/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            <a href="https://github.com/thomaux" target="_blank" rel="noreferrer noopener">GitHub</a>
+            <a href="https://stackoverflow.com/users/466761/thomaux" target="_blank" rel="noreferrer noopener">Stack Overflow</a>
+            <a href="https://twitter.com/thomaux" target="_blank" rel="noreferrer noopener">Twitter</a>
+        </div>
+    </div>
+
+</html>

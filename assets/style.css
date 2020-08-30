@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+:root {
+    --primary-color: #ffcc00;
+    --secondary-color: #0f0326;
+    --headshot-size: 200px;
+}
+
+::selection,
+.contact {
+    color: white;
+    background-color: var(--primary-color);
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.headshot {
+    border-radius: 50%;
+    width: var(--headshot-size);
+    height: var(--headshot-size);
+    shape-outside: circle(50%);
+    align-self: center;
+}
+
+p:first-of-type::first-letter {
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.skill {
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.skill:before {
+    content: "#";
+    color: var(--primary-color);
+}
+
+.contact {
+    padding: 0.5em;
+    text-align: center;       
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    margin-right: 1.5em;
+    white-space: nowrap;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+    * {
+        font-size: 24px;
+    }
+
+    .headshot {
+        float: left;
+        margin-right: 2em;
+    }
+
+    .introduction {
+        display: initial;
+    }
+}
